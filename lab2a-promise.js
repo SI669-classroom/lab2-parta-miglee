@@ -12,12 +12,28 @@ function flip() {
 //// result to the console (e.g. "Heads" or "Tails" for each flip).
 
 
+function heads() {
+    console.log("Heads!");
+}
 
+function tails() {
+    console.log("Tails!");
+}
+
+for (let i = 0; i < 10; i++) {
+	let result = flip().then(heads,tails)
+}
 
 ///// Problem 2 - More fun...
 
 function countBig(bignum) {
     // Add code here that returns a Promise that will resolve after it has counted to bignum
+    	return new Promise((resolve, reject)=>{
+    		for (let i = 0; i<bignum; i++) {
+    			let count=i
+    		}
+    		resolve();
+    	})
 }
 
 
